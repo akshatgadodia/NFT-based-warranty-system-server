@@ -23,6 +23,11 @@ app.listen(port, async () => {
 
 });
 
+app.get('/',async (req, res) => { 
+    res.send( "Welcome to NFT based Warranty System by Drunken Bytes" );
+});
+
+
 const saveDataOnIFPS = async (NFTData) =>{
     var data = JSON.stringify({"pinataOptions": {"cidVersion": 1},"pinataMetadata": {
         "name": "Warranty Card Data","keyvalues": {"customKey": "customValue","customKey2": "customValue2"}},
